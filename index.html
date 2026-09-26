@@ -1,0 +1,510 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mehdi Khouja</title>
+<meta name="description" content="Mehdi Khouja, PhD — Assistant Professor of Computer Science and Director of the Career Center at Tunis Business School, University of Tunis.">
+<meta name="author" content="Mehdi Khouja">
+<link rel="canonical" href="https://mkhouja.github.io/">
+<meta property="og:type" content="profile">
+<meta property="og:title" content="Mehdi Khouja — Computer Science & Employability">
+<meta property="og:description" content="Assistant Professor of Computer Science and Director of the Career Center at Tunis Business School, University of Tunis.">
+<meta property="og:url" content="https://mkhouja.github.io/">
+<meta property="og:image" content="https://mkhouja.github.io/assets/og-image.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231B5A9E'/%3E%3Ctext x='32' y='43' font-family='Georgia,serif' font-size='30' fill='white' text-anchor='middle'%3EMK%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Person","name":"Mehdi Khouja","jobTitle":"Assistant Professor of Computer Science","worksFor":{"@type":"CollegeOrUniversity","name":"Tunis Business School, University of Tunis"},"alumniOf":[{"@type":"CollegeOrUniversity","name":"University of the Balearic Islands"},{"@type":"CollegeOrUniversity","name":"National School of Computer Science (ENSI), University of La Manouba"}],"email":"mailto:mehdi.khouja@gmail.com","url":"https://mkhouja.github.io/","image":"https://mkhouja.github.io/assets/mehdi-khouja.jpg","sameAs":["https://www.linkedin.com/in/mehdikhouja","https://orcid.org/0000-0003-3311-2749"],"knowsLanguage":["ar","fr","en","es","ca"]}
+</script>
+<style>
+:root{
+  --ink:#14233B;
+  --ink-soft:#4A5870;
+  --paper:#FFFFFF;
+  --paper-2:#F2F5F9;
+  --line:#DCE3EC;
+  --blue:#1B5A9E;
+  --blue-deep:#0F3D70;
+  --blue-wash:#E3ECF7;
+  --ochre:#B07D22;
+  --teal:#2C7A70;
+  --plum:#6A5690;
+  --shadow:0 18px 40px -24px rgba(15,61,112,.45);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --ink:#E6ECF4;--ink-soft:#A7B3C4;--paper:#0E1726;--paper-2:#142034;--line:#26344B;
+    --blue:#6FA6E6;--blue-deep:#9CC3F0;--blue-wash:#1A2C47;--ochre:#D9A94E;--teal:#5DB3A7;--plum:#A792CF;
+    --shadow:0 18px 40px -24px rgba(0,0,0,.8);
+  }
+}
+:root[data-theme="dark"]{
+  --ink:#E6ECF4;--ink-soft:#A7B3C4;--paper:#0E1726;--paper-2:#142034;--line:#26344B;
+  --blue:#6FA6E6;--blue-deep:#9CC3F0;--blue-wash:#1A2C47;--ochre:#D9A94E;--teal:#5DB3A7;--plum:#A792CF;
+  --shadow:0 18px 40px -24px rgba(0,0,0,.8);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 17px/1.65 "IBM Plex Sans",system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:var(--blue);text-decoration-thickness:1px;text-underline-offset:3px}
+a:hover{color:var(--blue-deep)}
+:focus-visible{outline:2px solid var(--blue);outline-offset:3px;border-radius:4px}
+h1,h2,h3{font-family:Spectral,Georgia,serif;font-weight:500;line-height:1.15;margin:0}
+.wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+@media (max-width:600px){.wrap{padding:0 16px}}
+
+/* nav */
+.nav{position:sticky;top:0;z-index:10;background:color-mix(in srgb,var(--paper) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;align-items:center;gap:24px;height:60px}
+.nav .brand{font-family:Spectral,serif;font-size:20px;font-weight:600;color:var(--ink);text-decoration:none;white-space:nowrap}
+.nav ul{display:flex;gap:22px;list-style:none;margin:0 0 0 auto;padding:0;overflow-x:auto;scrollbar-width:none}
+.nav ul::-webkit-scrollbar{display:none}
+.nav ul a{color:var(--ink-soft);text-decoration:none;font-size:15px;white-space:nowrap}
+.nav ul a:hover{color:var(--blue)}
+.theme{border:1px solid var(--line);background:transparent;color:var(--ink-soft);width:34px;height:34px;border-radius:50%;cursor:pointer;flex:none;display:grid;place-items:center}
+@media (max-width:720px){.nav ul{gap:16px}.nav .brand{display:none}.nav ul{margin-left:0}}
+@media (max-width:430px){.nav ul{gap:12px}.nav ul a{font-size:14px}.nav .wrap{gap:10px}}
+
+/* hero */
+.hero{padding:72px 0 88px;background:linear-gradient(180deg,var(--blue-wash),var(--paper) 85%)}
+.hero .wrap{display:grid;grid-template-columns:1.25fr .9fr;gap:64px;align-items:center}
+.hero h1{font-size:clamp(46px,7vw,84px);letter-spacing:-.02em;font-weight:500}
+.hero .role{font-family:Spectral,serif;font-style:italic;font-size:clamp(20px,2.3vw,25px);color:var(--blue-deep);margin:18px 0 22px;max-width:34ch;line-height:1.35}
+.hero p.lede{color:var(--ink-soft);max-width:58ch;margin:0 0 30px}
+.actions{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:11px 20px;border-radius:999px;font-weight:500;font-size:15px;text-decoration:none;border:1px solid var(--blue);transition:background .15s,color .15s}
+.btn.primary{background:var(--blue);color:var(--paper)}
+.btn.primary:hover{background:var(--blue-deep);border-color:var(--blue-deep);color:var(--paper)}
+.btn.ghost{color:var(--blue);background:transparent}
+.btn.ghost:hover{background:var(--blue-wash)}
+.btn svg{width:17px;height:17px}
+.portrait{position:relative;justify-self:end;width:100%;max-width:400px}
+.portrait::before{content:"";position:absolute;inset:28px -22px -22px 28px;background:var(--blue);border-radius:6px 90px 6px 6px;opacity:.9}
+.portrait img{position:relative;display:block;width:100%;height:auto;aspect-ratio:4/5;object-fit:cover;border-radius:6px 90px 6px 6px;box-shadow:var(--shadow)}
+.facts{display:flex;flex-wrap:wrap;gap:10px 28px;margin:34px 0 0;padding:0;list-style:none;font-size:14.5px;color:var(--ink-soft)}
+.facts b{display:block;color:var(--ink);font-weight:600;font-size:15px}
+@media (max-width:860px){
+  .hero{padding:44px 0 64px}
+  .hero .wrap{grid-template-columns:1fr;gap:48px}
+  .portrait{justify-self:start;max-width:240px;order:-1}
+}
+
+/* sections */
+section{padding:88px 0}
+section.alt{background:var(--paper-2)}
+.head{display:grid;grid-template-columns:220px 1fr;gap:40px;margin-bottom:44px;align-items:baseline}
+.head h2{font-size:clamp(30px,3.6vw,40px)}
+.head p{margin:0;color:var(--ink-soft);max-width:62ch}
+@media (max-width:860px){section{padding:64px 0}.head{grid-template-columns:1fr;gap:12px;margin-bottom:32px}}
+
+/* timeline */
+.tl{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:28px 28px 20px;box-shadow:var(--shadow)}
+.legend{display:flex;flex-wrap:wrap;gap:8px 22px;margin:0 0 22px;padding:0;list-style:none;font-size:14px;color:var(--ink-soft)}
+.legend li{display:flex;align-items:center;gap:8px}
+.legend i{width:14px;height:8px;border-radius:4px;display:inline-block}
+.tl-rows{position:relative}
+.tl-row{display:grid;grid-template-columns:260px 1fr;gap:18px;align-items:center;min-height:30px}
+.tl-label{font-size:13.5px;color:var(--ink-soft);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-align:right}
+.tl-track{position:relative;height:30px}
+.tl-track::before{content:"";position:absolute;left:0;right:0;top:50%;border-top:1px dashed var(--line)}
+.tl-bar{position:absolute;top:8px;height:14px;border-radius:7px;min-width:8px}
+.tl-bar.now{border-top-right-radius:2px;border-bottom-right-radius:2px}
+.tl-bar.now::after{content:"";position:absolute;right:-6px;top:3px;width:8px;height:8px;border-radius:50%;background:inherit;box-shadow:0 0 0 3px var(--paper)}
+.tl-axis{display:grid;grid-template-columns:260px 1fr;gap:18px;margin-top:10px}
+.tl-ticks{position:relative;height:22px;border-top:1px solid var(--line);font-size:12.5px;color:var(--ink-soft)}
+.tl-ticks span{position:absolute;top:4px;transform:translateX(-50%)}
+.c-teach{background:var(--blue)}.c-lead{background:var(--ochre)}.c-res{background:var(--teal)}.c-ind{background:var(--plum)}
+@media (max-width:720px){
+  .tl{padding:20px 16px 14px}
+  .tl-row,.tl-axis{grid-template-columns:1fr;gap:0}
+  .tl-label{text-align:left;white-space:normal;font-size:13px;padding-top:6px}
+  .tl-axis>div:first-child{display:none}
+}
+
+/* experience detail */
+.exp{margin-top:64px;display:grid;gap:0}
+.org{display:grid;grid-template-columns:220px 1fr;gap:40px;padding:34px 0;border-top:1px solid var(--line)}
+.org:first-child{border-top:0;padding-top:0}
+.org h3{font-size:22px}
+.org .where{font-size:14.5px;color:var(--ink-soft);margin-top:6px}
+.roles{display:grid;gap:22px}
+.r h4{margin:0;font-size:17px;font-weight:600}
+.r .when{font-size:14px;color:var(--blue);font-weight:500;margin-top:2px}
+.r ul{margin:8px 0 0;padding-left:18px;color:var(--ink-soft)}
+.r li{margin:4px 0}
+.r li::marker{color:var(--blue)}
+@media (max-width:860px){.org{grid-template-columns:1fr;gap:16px;padding:28px 0}}
+
+/* projects */
+.projects{display:grid;grid-template-columns:repeat(2,1fr);gap:0 48px}
+.proj{padding:22px 0;border-top:1px solid var(--line);display:grid;grid-template-columns:96px 1fr;gap:18px}
+.proj .yr{font-family:Spectral,serif;font-size:17px;color:var(--blue-deep);font-variant-numeric:tabular-nums;padding-top:1px}
+.proj h3{font-family:"IBM Plex Sans",sans-serif;font-size:16.5px;font-weight:600;line-height:1.4}
+.proj p{margin:6px 0 0;font-size:14.5px;color:var(--ink-soft)}
+.tag{display:inline-block;font-size:12.5px;font-weight:500;padding:2px 10px;border-radius:999px;background:var(--blue-wash);color:var(--blue-deep);margin-right:8px}
+.proj.lead .tag{background:color-mix(in srgb,var(--ochre) 18%,transparent);color:var(--ochre)}
+@media (max-width:860px){.projects{grid-template-columns:1fr}.proj{grid-template-columns:80px 1fr}}
+
+/* education + skills */
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+.card{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:26px}
+section.alt .card{background:var(--paper)}
+.card h3{font-size:21px;margin-bottom:14px}
+.edu{display:grid;gap:0}
+.edu .item{display:grid;grid-template-columns:96px 1fr;gap:18px;padding:22px 0;border-top:1px solid var(--line)}
+.edu .item:first-child{border-top:0;padding-top:0}
+.edu .yr{font-family:Spectral,serif;font-size:28px;color:var(--blue);line-height:1}
+.edu h3{font-size:22px}
+.edu p{margin:4px 0 0;color:var(--ink-soft)}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:0;padding:0;list-style:none}
+.chips li{font-size:14px;padding:5px 12px;border:1px solid var(--line);border-radius:999px;background:var(--paper-2)}
+.plain{list-style:none;margin:0;padding:0;display:grid;gap:10px;font-size:15px}
+.plain span{display:block;font-size:13.5px;color:var(--ink-soft)}
+.langs{list-style:none;margin:0;padding:0;display:grid;gap:12px}
+.langs li{display:grid;grid-template-columns:90px 1fr 64px;align-items:center;gap:12px;font-size:15px}
+.langs .meter{height:6px;border-radius:3px;background:var(--line);overflow:hidden}
+.langs .meter i{display:block;height:100%;background:var(--blue);border-radius:3px}
+.langs em{font-style:normal;font-size:13px;color:var(--ink-soft);text-align:right}
+.two{display:grid;grid-template-columns:1.2fr 1fr;gap:28px;margin-top:28px}
+@media (max-width:960px){.grid3{grid-template-columns:1fr 1fr}}
+@media (max-width:700px){.grid3,.two{grid-template-columns:1fr}.edu .item{grid-template-columns:70px 1fr}.edu .yr{font-size:22px}}
+
+/* contact */
+.contact{background:var(--blue-deep);color:#fff}
+:root[data-theme="dark"] .contact{background:#0A2340}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .contact{background:#0A2340}}
+.contact .wrap{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:end}
+.contact h2{font-size:clamp(34px,4.6vw,54px);color:#fff}
+.contact p{color:#C9D8EA;max-width:48ch;margin:16px 0 0}
+.links{list-style:none;margin:0;padding:0;display:grid;gap:0}
+.links a{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:18px 0;border-bottom:1px solid rgba(255,255,255,.2);color:#fff;text-decoration:none;font-size:17px}
+.links a span{color:#9FB9D8;font-size:14px}
+.links a:hover span{color:#fff}
+.links li:first-child a{border-top:1px solid rgba(255,255,255,.2)}
+footer{background:var(--blue-deep);color:#9FB9D8;font-size:13.5px;padding:0 0 36px}
+:root[data-theme="dark"] footer{background:#0A2340}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) footer{background:#0A2340}}
+@media (max-width:860px){.contact .wrap{grid-template-columns:1fr;gap:32px}}
+
+/* one orchestrated moment: the timeline bars grow in */
+.tl.go .tl-bar{animation:grow .9s cubic-bezier(.2,.7,.2,1) both;transform-origin:left center}
+@keyframes grow{from{transform:scaleX(0);opacity:.2}to{transform:scaleX(1);opacity:1}}
+</style>
+</head>
+<body>
+
+<nav class="nav" aria-label="Main">
+  <div class="wrap">
+    <a class="brand" href="#top">Mehdi Khouja</a>
+    <ul>
+      <li><a href="#career">Career</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="theme" id="theme" type="button" aria-label="Toggle dark mode">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+    </button>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="wrap">
+    <div>
+      <h1>Mehdi Khouja</h1>
+      <p class="role">Assistant Professor of Computer Science and Director of the Career Center at Tunis Business School</p>
+      <p class="lede">For more than ten years I have taught computer science, built academic programs and led career centers that connect students with employers. My work sits where teaching, curriculum reform and employability meet, from web development and distributed systems in the classroom to national program evaluation and international Erasmus+ and Tempus projects.</p>
+      <div class="actions">
+        <a class="btn primary" href="mailto:mehdi.khouja@gmail.com">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+          Email me
+        </a>
+        <a class="btn ghost" href="https://www.linkedin.com/in/mehdikhouja" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn ghost" href="https://orcid.org/0000-0003-3311-2749" target="_blank" rel="noopener">ORCID</a>
+      </div>
+      <ul class="facts">
+        <li><b>PhD, Computer Science</b>University of the Balearic Islands</li>
+        <li><b>Tunis, Tunisia</b>University of Tunis</li>
+        <li><b>5 languages</b>Arabic, French, English, Spanish, Catalan</li>
+      </ul>
+    </div>
+    <figure class="portrait" style="margin:0">
+      <img src="assets/mehdi-khouja.jpg" width="560" height="700" alt="Portrait of Mehdi Khouja">
+    </figure>
+  </div>
+</header>
+
+<main>
+<section id="career">
+  <div class="wrap">
+    <div class="head">
+      <h2>Career</h2>
+      <p>Teaching, leadership, research and entrepreneurship have often run side by side. The timeline shows how the roles overlap; the details follow below.</p>
+    </div>
+
+    <div class="tl" id="tl">
+      <ul class="legend">
+        <li><i class="c-teach"></i>Teaching</li>
+        <li><i class="c-lead"></i>Leadership &amp; governance</li>
+        <li><i class="c-res"></i>Research</li>
+        <li><i class="c-ind"></i>Industry &amp; consulting</li>
+      </ul>
+      <div class="tl-rows" id="tl-rows"></div>
+      <div class="tl-axis"><div></div><div class="tl-ticks" id="tl-ticks"></div></div>
+    </div>
+
+    <div class="exp">
+      <article class="org">
+        <div><h3>Tunis Business School</h3><div class="where">University of Tunis, Tunisia</div></div>
+        <div class="roles">
+          <div class="r"><h4>Elected Member of the Scientific Council</h4><div class="when">Aug 2024 – present</div>
+            <ul><li>Strategic oversight of the school’s scientific projects; support for research, training and internship initiatives.</li></ul></div>
+          <div class="r"><h4>Director of the Career Center (4C)</h4><div class="when">Feb 2023 – present</div>
+            <ul><li>Leading employability initiatives: internships, career workshops and employer partnerships.</li></ul></div>
+          <div class="r"><h4>Assistant Professor of Computer Science</h4><div class="when">Oct 2022 – present</div>
+            <ul><li>Bachelor courses: Web Development (HTML, CSS, JavaScript), Advanced Web Development (React), Object-Oriented Programming (Java).</li></ul></div>
+        </div>
+      </article>
+
+      <article class="org">
+        <div><h3>National Commission of Computer Science</h3><div class="where">Ministry of Higher Education and Scientific Research, Tunisia</div></div>
+        <div class="roles">
+          <div class="r"><h4>Member, Rapporteur and Coordinator</h4><div class="when">2018 – present</div>
+            <ul>
+              <li>Evaluate bachelor’s, master’s and doctoral programs for public and private institutions, and assess integrated diplomas within the LMD system.</li>
+              <li>Propose ways to raise training quality and align programs with economic, social and cultural needs; advise on university reform.</li>
+              <li>Took part in the USAID-funded Tunisia JOBS workshops to reform computer science bachelor’s curricula around industry needs.</li>
+              <li>Represent computer science bachelor’s programs at the national university orientation days.</li>
+            </ul></div>
+        </div>
+      </article>
+
+      <article class="org">
+        <div><h3>Management Systems International</h3><div class="where">USAID TALEEM Project</div></div>
+        <div class="roles">
+          <div class="r"><h4>Consultant</h4><div class="when">Nov 2024 – Feb 2025</div>
+            <ul><li>Guided applicants in preparing and submitting concept notes aligned with the project’s guidelines and objectives.</li></ul></div>
+        </div>
+      </article>
+
+      <article class="org">
+        <div><h3>Higher Institute of Computer Science and Multimedia of Gabès</h3><div class="where">University of Gabès, Tunisia</div></div>
+        <div class="roles">
+          <div class="r"><h4>Assistant Professor of Computer Science</h4><div class="when">Oct 2014 – Sep 2022</div>
+            <ul><li>Bachelor: Development of Distributed Applications.</li>
+            <li>Master: Data Mining Techniques, Big Data (IBM certification), Architectures and Advanced Systems, Java Multimedia, Distributed Applications, Web Application Security.</li></ul></div>
+          <div class="r"><h4>Director of the Career Center (4C)</h4><div class="when">Aug 2017 – Sep 2022</div>
+            <ul><li>Led employability initiatives: internships, career workshops and employer partnerships.</li></ul></div>
+          <div class="r"><h4>Director of Studies and Internships, Vice Director</h4><div class="when">Mar 2018 – Dec 2020</div>
+            <ul><li>Managed student internships, coordinated the institute’s departments and supervised bachelor’s and master’s study plans.</li></ul></div>
+          <div class="r"><h4>Elected Member of the Scientific Council</h4><div class="when">Dec 2017 – Dec 2020</div>
+            <ul><li>Oversaw scientific projects and supported research, training and internship initiatives.</li></ul></div>
+        </div>
+      </article>
+
+      <article class="org">
+        <div><h3>University of Gabès</h3><div class="where">Student Entrepreneurship Center</div></div>
+        <div class="roles">
+          <div class="r"><h4>Member of the Steering Committee</h4><div class="when">Jun 2021 – Sep 2022</div>
+            <ul><li>Built an entrepreneurial culture across the university through awareness, training and coaching.</li></ul></div>
+        </div>
+      </article>
+
+      <article class="org">
+        <div><h3>Part-time lecturing</h3><div class="where">Universities of Carthage and Gabès</div></div>
+        <div class="roles">
+          <div class="r"><h4>ENSTA Borj Cédria, University of Carthage</h4><div class="when">2018 – 2022</div>
+            <ul><li>Engineering courses: Big Data Overview, Data Mining.</li></ul></div>
+          <div class="r"><h4>Institut Supérieur de Gestion de Gabès</h4><div class="when">2014 – 2019</div>
+            <ul><li>Master courses: Distributed Systems, Multi-Agent Systems.</li></ul></div>
+        </div>
+      </article>
+
+      <article class="org">
+        <div><h3>University of the Balearic Islands</h3><div class="where">Palma, Spain</div></div>
+        <div class="roles">
+          <div class="r"><h4>Research Assistant</h4><div class="when">Oct 2012 – Jul 2014</div>
+            <ul><li>Telefónica Chair of Digital Health and Sustainable Tourism.</li></ul></div>
+          <div class="r"><h4>Research Trainee</h4><div class="when">Oct 2010 – Sep 2012</div></div>
+        </div>
+      </article>
+
+      <article class="org">
+        <div><h3>Bit-Win SARL</h3><div class="where">Incubator, El Ghazala Technopole, Tunisia</div></div>
+        <div class="roles">
+          <div class="r"><h4>Co-founder</h4><div class="when">2007 – 2009</div>
+            <ul><li>Co-founded and ran an electronic intermediation company and launched its flagship service, Sans Fautes, which connected clients with experts in proofreading, editing, technical writing and translation.</li></ul></div>
+        </div>
+      </article>
+
+      <article class="org">
+        <div><h3>Earlier roles</h3><div class="where">Tunisia and Germany</div></div>
+        <div class="roles">
+          <div class="r"><h4>Lecturer, Higher Institute of Multimedia Arts of La Manouba</h4><div class="when">Sep 2004 – Sep 2006</div></div>
+          <div class="r"><h4>Intern, Westsächsische Hochschule Zwickau, Germany</h4><div class="when">Aug – Sep 2002</div></div>
+          <div class="r"><h4>Intern, Biodata Carthago, Tunisia</h4><div class="when">Jun – Jul 2002</div></div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="projects" class="alt">
+  <div class="wrap">
+    <div class="head">
+      <h2>Projects</h2>
+      <p>International and national programs on employability, IT governance, curriculum design and web performance. Projects I led or coordinated are marked in gold.</p>
+    </div>
+    <div class="projects">
+      <article class="proj lead"><div class="yr">2020–23</div><div><h3>HEALING: a multidisciplinary diploma on art therapy in health education</h3><p><span class="tag">Erasmus+</span>Coordinator, University of Gabès · <a href="https://sites.ju.edu.jo/en/healing" target="_blank" rel="noopener">Project site</a></p></div></article>
+      <article class="proj lead"><div class="yr">2019–21</div><div><h3>PAQ-4C: a 4C center of excellence for video game developers at ISIMG</h3><p><span class="tag">PAQ Tunisia</span>Project leader</p></div></article>
+      <article class="proj lead"><div class="yr">2018–20</div><div><h3>PAQ-PRICE: professional training for the employability of ISIM Gabès graduates</h3><p><span class="tag">PAQ Tunisia</span>Project leader</p></div></article>
+      <article class="proj lead"><div class="yr">2015–18</div><div><h3>ITG4TU: Information Technology Governance for Tunisian Universities</h3><p><span class="tag">Erasmus+</span>National coordinator · <a href="https://itg4tu.uib.eu/" target="_blank" rel="noopener">Project site</a></p></div></article>
+      <article class="proj"><div class="yr">2013–16</div><div><h3>SEMSEM: employability and mobility through company internships for Maghreb and Mashreq students</h3><p><span class="tag">Tempus</span>Member</p></div></article>
+      <article class="proj"><div class="yr">2012–14</div><div><h3>Energy efficiency, virtualization and web server performance</h3><p><span class="tag">Spanish National Program</span>Member</p></div></article>
+      <article class="proj"><div class="yr">2010–13</div><div><h3>Developing employability in the fields of engineering</h3><p><span class="tag">Tempus</span>Member</p></div></article>
+      <article class="proj"><div class="yr">2011</div><div><h3>Spanish–Brazilian workshop on web performance and energy efficiency</h3><p><span class="tag">Spain–Brazil cooperation</span>Member</p></div></article>
+      <article class="proj"><div class="yr">2007–10</div><div><h3>SOSA: Semantic Service-Oriented Architecture</h3><p><span class="tag">Spanish National Program</span>Member</p></div></article>
+      <article class="proj"><div class="yr">2007–08</div><div><h3>Internet based on distributed services and applications</h3><p><span class="tag">Spanish National Program</span>Member</p></div></article>
+      <article class="proj"><div class="yr">2003–05</div><div><h3>Benchmarking for e-commerce</h3><p><span class="tag">Spain–Tunisia cooperation</span>Member</p></div></article>
+    </div>
+  </div>
+</section>
+
+<section id="education">
+  <div class="wrap">
+    <div class="head">
+      <h2>Education</h2>
+      <p>Trained as a computer engineer in Tunisia, with a doctorate completed in Spain.</p>
+    </div>
+    <div class="edu">
+      <div class="item"><div class="yr">2013</div><div><h3>PhD in Computer Science</h3><p>University of the Balearic Islands, Spain</p></div></div>
+      <div class="item"><div class="yr">2004</div><div><h3>Master’s Degree in Computer Science</h3><p>National School of Computer Science (ENSI), University of La Manouba, Tunisia</p></div></div>
+      <div class="item"><div class="yr">2003</div><div><h3>Engineering Degree in Computer Science</h3><p>National School of Computer Science (ENSI), University of La Manouba, Tunisia</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="skills" class="alt">
+  <div class="wrap">
+    <div class="head">
+      <h2>Skills</h2>
+      <p>The technical ground I teach from, and the skills I use to run centers, programs and projects.</p>
+    </div>
+    <div class="grid3">
+      <div class="card"><h3>Technical</h3>
+        <ul class="chips"><li>Java</li><li>JavaScript</li><li>Python</li><li>C</li><li>HTML &amp; CSS</li><li>React</li><li>IT Governance</li><li>Distributed Systems</li><li>Data Mining</li><li>Big Data</li><li>Web Security</li></ul></div>
+      <div class="card"><h3>Professional</h3>
+        <ul class="chips"><li>Project Management</li><li>Curriculum Development</li><li>Career Coaching</li><li>Employer Partnerships</li><li>Team Collaboration</li><li>Problem Solving</li></ul></div>
+      <div class="card"><h3>Certifications</h3>
+        <ul class="plain">
+          <li>Blockchain Developer<span>IBM, 2020</span></li>
+          <li>Big Data Engineer v2 Mastery Award for Educators<span>IBM, 2018</span></li>
+        </ul></div>
+    </div>
+    <div class="two">
+      <div class="card"><h3>Training</h3>
+        <ul class="plain">
+          <li>Coaching Skills<span>Next Slide, 2023</span></li>
+          <li>OSTX Taskforce Bootcamp<span>OST, 2021</span></li>
+          <li>Communication Techniques (ECO-C)<span>Agence Universitaire de la Francophonie, 2021</span></li>
+          <li>Digital Marketing; Facebook Ads and Google Ads<span>E2business Consulting Training, 2021</span></li>
+        </ul></div>
+      <div class="card"><h3>Languages</h3>
+        <ul class="langs">
+          <li>Arabic<span class="meter"><i style="width:100%"></i></span><em>Native</em></li>
+          <li>French<span class="meter"><i style="width:90%"></i></span><em>Fluent</em></li>
+          <li>English<span class="meter"><i style="width:90%"></i></span><em>Fluent</em></li>
+          <li>Spanish<span class="meter"><i style="width:90%"></i></span><em>Fluent</em></li>
+          <li>Catalan<span class="meter"><i style="width:35%"></i></span><em>Basic</em></li>
+        </ul></div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <div class="wrap">
+    <div>
+      <h2>Let’s work together</h2>
+      <p>I welcome conversations about internships and employer partnerships, curriculum projects, program evaluation and academic collaboration.</p>
+    </div>
+    <ul class="links">
+      <li><a href="mailto:mehdi.khouja@gmail.com">Email <span>mehdi.khouja@gmail.com</span></a></li>
+      <li><a href="https://www.linkedin.com/in/mehdikhouja" target="_blank" rel="noopener">LinkedIn <span>in/mehdikhouja</span></a></li>
+      <li><a href="https://orcid.org/0000-0003-3311-2749" target="_blank" rel="noopener">ORCID <span>0000-0003-3311-2749</span></a></li>
+    </ul>
+  </div>
+</section>
+</main>
+
+<footer><div class="wrap">© <span id="yr">2026</span> Mehdi Khouja</div></footer>
+
+<script>
+(function(){
+  // Career timeline data: [label, start (decimal year), end (null = present), category]
+  var NOW = new Date().getFullYear() + new Date().getMonth()/12;
+  var MIN = 2002, MAX = Math.max(2026.5, NOW + .3);
+  var rows = [
+    ["Internships, Tunisia & Germany", 2002.42, 2002.75, "ind"],
+    ["Lecturer, ISAM La Manouba", 2004.67, 2006.67, "teach"],
+    ["Co-founder, Bit-Win", 2007, 2009.9, "ind"],
+    ["Researcher, Univ. Balearic Islands", 2010.75, 2014.5, "res"],
+    ["Part-time lecturer, ISG Gabès", 2014, 2019.5, "teach"],
+    ["Assistant Professor, ISIMG", 2014.75, 2022.67, "teach"],
+    ["Director, Career Center ISIMG", 2017.58, 2022.67, "lead"],
+    ["Scientific Council, ISIMG", 2017.92, 2020.95, "lead"],
+    ["Director of Studies, ISIMG", 2018.17, 2020.95, "lead"],
+    ["National Commission of CS", 2018, null, "lead"],
+    ["Part-time lecturer, ENSTA", 2018, 2022.5, "teach"],
+    ["Entrepreneurship Center, Gabès", 2021.42, 2022.67, "lead"],
+    ["Assistant Professor, TBS", 2022.75, null, "teach"],
+    ["Director, Career Center TBS", 2023.08, null, "lead"],
+    ["Scientific Council, TBS", 2024.58, null, "lead"],
+    ["Consultant, USAID TALEEM", 2024.83, 2025.12, "ind"]
+  ];
+  var pct = function(y){ return ((y - MIN) / (MAX - MIN) * 100).toFixed(2) + "%"; };
+  var host = document.getElementById("tl-rows"), html = "";
+  rows.forEach(function(r, i){
+    var end = r[2] === null ? NOW : r[2];
+    var left = pct(r[1]), width = ((end - r[1]) / (MAX - MIN) * 100).toFixed(2) + "%";
+    var yrs = Math.floor(r[1]) + "–" + (r[2] === null ? "present" : Math.floor(r[2]));
+    html += '<div class="tl-row"><div class="tl-label" title="' + r[0] + '">' + r[0] + '</div>' +
+      '<div class="tl-track"><span class="tl-bar c-' + r[3] + (r[2] === null ? ' now' : '') +
+      '" style="left:' + left + ';width:' + width + ';animation-delay:' + (i * 45) + 'ms" title="' + r[0] + ', ' + yrs + '"></span></div></div>';
+  });
+  host.innerHTML = html;
+  var ticks = "";
+  for (var y = 2002; y <= MAX; y += 4) ticks += '<span style="left:' + pct(y) + '">' + y + '</span>';
+  document.getElementById("tl-ticks").innerHTML = ticks;
+  document.getElementById("tl").setAttribute("aria-label", "Timeline of roles from 2002 to present");
+
+  var tl = document.getElementById("tl");
+  if ("IntersectionObserver" in window) {
+    var io = new IntersectionObserver(function(e){
+      if (e[0].isIntersecting) { tl.classList.add("go"); io.disconnect(); }
+    }, { threshold: .25 });
+    io.observe(tl);
+  }
+
+  document.getElementById("yr").textContent = new Date().getFullYear();
+
+  // Theme toggle
+  var root = document.documentElement, btn = document.getElementById("theme");
+  try { var saved = localStorage.getItem("theme"); if (saved) root.setAttribute("data-theme", saved); } catch(e){}
+  btn.addEventListener("click", function(){
+    var dark = root.getAttribute("data-theme") ? root.getAttribute("data-theme") === "dark"
+      : window.matchMedia("(prefers-color-scheme: dark)").matches;
+    var next = dark ? "light" : "dark";
+    root.setAttribute("data-theme", next);
+    try { localStorage.setItem("theme", next); } catch(e){}
+  });
+})();
+</script>
+</body>
+</html>
